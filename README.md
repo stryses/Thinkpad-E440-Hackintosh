@@ -7,6 +7,10 @@ Init Time: 2020/03/17
 
 Update Time: 2020/03/25
 
+Github：https://github.com/stryses/Thinkpad-E440-Hackintosh
+
+Gitee [中文]：https://gitee.com/likt/Thinkpad-E440-Hackintosh
+
 ## Can I use?
 
 This is my hardware report , if you same with me , you can download all the file use it directly.
