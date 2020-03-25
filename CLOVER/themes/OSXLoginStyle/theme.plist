@@ -11,11 +11,9 @@
 		<key>Background</key>
 		<dict>
 			<key>Dark</key>
-			<false/>
+			<true/>
 			<key>Path</key>
-			<string>bg.png</string>
-			<key>Type</key>
-			<string>Tile</string>
+			<string>black.png</string>
 		</dict>
 		<key>Badges</key>
 		<dict>
@@ -26,8 +24,6 @@
 			<key>Swap</key>
 			<true/>
 		</dict>
-		<key>Banner</key>
-		<string>banner.png</string>
 		<key>BootCampStyle</key>
 		<false/>
 		<key>Components</key>

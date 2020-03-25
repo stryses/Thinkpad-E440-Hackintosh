@@ -3,7 +3,9 @@ Config and drivers of Boot Mac on Thinkpad E440
 
 Mac Version: 10.14.6
 
-Update Time: 2020/03/17
+Init Time: 2020/03/17
+
+Update Time: 2020/03/25
 
 ## Can I use?
 
@@ -15,7 +17,7 @@ This is my hardware report , if you same with me , you can download all the file
 | BIOS     | 2.25 **[NOT RECOMMEND UPDATE TO 2.28]** |
 | CPU      | i5-4200M                                |
 | GPU      | Intel HD Graphics 4600                  |
-| Audio    | CX20751-21Z                             |
+| Audio    | CX20751-2                               |
 | LAN      | Gigabit Ethernet                        |
 | Optional | M.2 [NGFF] SSD                          |
 
@@ -27,7 +29,7 @@ The resository include:
 
 - Clover and the Config for Thinkpad E440
 - Some of essential Kext
-- Battery Patch of DSDT
+- Some Patch of DSDT
 
 ## Where from?
 
@@ -39,23 +41,23 @@ Part of program inspired by Zz.mark's Repository , especially battery patch.
 
 Based on my usage feedback  ,  following functions can be used normally:
 
-- Intel HD4600 Graphic
-- Brightness Adjustment
-- CONEXANT CX20751-21Z Audio I/O **[Headset Speaker need switch manually]**
+- Intel HD4600 Graphic  **[Based on Whatevergreen]**
+- Brightness Adjustment  **[Based on Clover add Auto]**
+- CONEXANT CX20751-21Z Audio I/O  **[Based on VoodooHDA or AppleALC]**
 - Keyboard , Touchpad and ⭕️  with Setting , Available 3 Fingers Function **[Based on DSDT]**
-- CD/DVD I/O
-- HDMI **Without Audio**
-- Disabled NVIDIA Geforce without BIOS Setting **[Recommond disabled in the BIOS too]**
-- Cabel Network Support
-- SpeedStepping
-- Internal Camera
+- CD/DVD I/O **[System Support]**
+- HDMI **Without Audio** 
+- Disabled NVIDIA Geforce without BIOS Setting  **[Recommond disabled in the BIOS too]**
+- Cabel Network Support  **[Based on RTL1111]**
+- SpeedStepping  **[Based on CPUFriend & DataProvide & AUTO SSDT]**
+- Internal Camera  **[Based on USBInjectAll]**
 - USB 2.0/3.0
-- Battery Status  **[Based on DSDT Patched]**
+- Battery Status  **[Based on ACPIBatteryManage & DSDT Patched]**
 - Sleep
 
 ## What's Problem?
 
-- Wireless & Bluetooth  [RTL8723BE NO Solution]
+- Wireless & Bluetooth  [RTL8723BE PCI-E NO Solution]
 
 - HDMI Audio [Maybe have soulution :) ]
 
@@ -65,11 +67,13 @@ Based on my usage feedback  ,  following functions can be used normally:
 
   **[Failed to set nvram properly] , [Can't convert the disk to APFS]**
   
-  About this , I can't sure all of people will face it , the method I found is to find a have been installed DMG straightly cover in the disk. Maybe you can remove the unessential kext or boot drive to try.
+  About this , I can't sure all of people will face it , the method I found is to find a have been installed DMG straightly cover in the disk. Maybe you can remove the inessential kext or boot drive to try.
+  
+  Tip: You can move the kext "EMUefi" form (patch/KEXT) to try. After Installed you can delete it because mac support e440 nvram I/O.
 
 ## SOMETHING YOU HAVE TO KNOW
 
-1. USBDrive(*USBInjectAll.kext*) maybe have any problem that affect Sleep Wakeup , if not essential please remove the kext manually. **Infact , this drive only drives internal Camera.**
+1. USBDrive(*USBInjectAll.kext*) maybe have any problem that affect Sleep Wakeup , if you think it's inessential please remove the kext manually. **Infact , this drive only drives internal Camera.**
 
 2. Please don't turn on the function of hang up the touchpad when have external mouse , that will cause your mouse unnormallly.  **Most of time touchpad support all function which achieve in 3 fingers.**
 
@@ -81,3 +85,27 @@ Please search the article/paper/course about Mac Hackintosh , these are you have
 - Install and note the problem you face.
 - Use MaciASL take patch.
 - Clover and Drive arranged by yourself.
+
+# Update Logs
+
+## 20200325 Release
+
+- Update Clover to Version 5107
+
+- Add VirtualSMC Sensor Kext 
+
+- Replace FakeSMC by VirtualSMC
+
+- Add AppleALC Support
+- Add AppleLPC Support
+- Fix HD4600 VRam
+- Fix Touchpad (Click & Crack) 
+- Fix CPU Speed
+- Fix Backlight
+- Fix Battery Status
+- Fix Reboot or Shutdown Error
+- Add USB Hotspot Network Kext
+- Repository Intial by Clover
+
+# Some Screenshots!
+
