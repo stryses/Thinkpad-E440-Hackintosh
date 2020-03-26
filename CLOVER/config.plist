@@ -434,7 +434,7 @@
 		<key>KbdPrevLang</key>
 		<true/>
 		<key>Language</key>
-		<string>zh_CN:0</string>
+		<string>en-US:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -456,7 +456,7 @@
 		<key>ScreenResolution</key>
 		<string>1366x768</string>
 		<key>Theme</key>
-		<string>OSXLoginStyle</string>
+		<string>Sierra</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -555,7 +555,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C17408300CDFH31FB</string>
+		<string>C17404303GUFH31A8</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -585,9 +585,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
 		<key>SerialNumber</key>
-		<string>C17M90NPFH00</string>
+		<string>C17M5SYXFH00</string>
 		<key>SmUUID</key>
-		<string>BF4371DB-60CD-426D-A017-2516B30DF77C</string>
+		<string>E5E0C352-AABB-4C61-93F6-C3296D8ABDAB</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

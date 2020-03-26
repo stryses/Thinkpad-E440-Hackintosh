@@ -21,10 +21,6 @@
 		<dict>
 			<key>Inline</key>
 			<false/>
-			<key>OffsetX</key>
-			<integer>0</integer>
-			<key>OffsetY</key>
-			<integer>0</integer>
 			<key>Scale</key>
 			<integer>16</integer>
 			<key>Show</key>
@@ -32,14 +28,12 @@
 			<key>Swap</key>
 			<true/>
 		</dict>
-		<key>Banner</key>
-		<string>logo.png</string>
 		<key>BootCampStyle</key>
 		<false/>
 		<key>Components</key>
 		<dict>
 			<key>Banner</key>
-			<true/>
+			<false/>
 			<key>Functions</key>
 			<true/>
 			<key>Help</key>

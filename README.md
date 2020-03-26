@@ -5,7 +5,7 @@ Mac Version: 10.14.6
 
 Init Time: 2020/03/17
 
-Update Time: 2020/03/25
+Update Time: 2020/03/26
 
 Github：https://github.com/stryses/Thinkpad-E440-Hackintosh
 

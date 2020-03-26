@@ -13,7 +13,7 @@
 			<key>Dark</key>
 			<true/>
 			<key>Path</key>
-			<string>black.png</string>
+			<string>bg-cover.png</string>
 		</dict>
 		<key>Badges</key>
 		<dict>
